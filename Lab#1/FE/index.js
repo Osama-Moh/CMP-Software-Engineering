@@ -55,6 +55,11 @@ function createEmployee(e) {
       alert("ID already exists");
       return;
     }
+    if (data.id <= 0)
+    {
+      alert("Negative ID");
+      return; 
+    }
   }
   console.log("click");
 
